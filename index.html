@@ -1,1 +1,37 @@
-html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rep Tracker</title>
+</head>
+<body>
+    <form id="workout-form">
+        <input type="date" id="date" required>
+
+        <select id="exercise" required>
+            <option value="">Choose exercise</option>
+            <option value="reverse-lunges">Reverse Lunges</option>
+            <option value="romanian-deadlift">Romanian Deadlift</option>
+            <option value="deep-pushup">Deep Push Ups</option>
+            <option value="bent-over-rows">Bent Over Rows</option>
+            <option value="plank">Plank</option>
+            <option value="calf-raise">Calif Raise</option>
+            <option value="walking-lunges">Walking Lunges</option>
+            <option value="single-romanian-deadlift">Single Romanian Deadlift</option>
+            <option value="side-plank">Side Plank</option>
+            <option value="hollow-holds">Hollow Holds</option>
+        </select>
+
+        <input type="number" id="sets" placeholder="Sets" required>
+        <input type="number" id="reps" placeholder="Reps" required>
+        <input type="number" id="weight" placeholder="Weight" required>
+
+        <button type="submit">Save Workout</button>
+    </form>
+
+    <ul id="workout-list"></ul>
+
+    <script src="app.js"></script>
+</body>
+</html>
