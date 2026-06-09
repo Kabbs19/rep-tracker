@@ -1,3 +1,19 @@
+import { initializeApp } from "https://www.gstatic.com/firebasejs/12.14.0/firebase-app.js";
+import { getDatabase } from "https://www.gstatic.com/firebasejs/12.14.0/firebase-database.js";
+
+const firebaseConfig = {
+    databaseURL: "https://rep-tracker-a6275-default-rtdb.europe-west1.firebasedatabase.app/",
+    apiKey: "AIzaSyAzyua549ft9x7Nv4iFNkxudvY2J2DEwS4",
+    authDomain: "rep-tracker-a6275.firebaseapp.com",
+    projectId: "rep-tracker-a6275",
+    storageBucket: "rep-tracker-a6275.firebasestorage.app",
+    messagingSenderId: "557112589347",
+    appId: "1:557112589347:web:35913226a84d6f9ea44596"
+}
+
+const app = initializeApp(firebaseConfig);
+const database = getDatabase(app);
+
 const form = document.getElementById("workout-form");
 const workoutList = document.getElementById("workout-list");
 let workouts = JSON.parse(localStorage.getItem("workouts")) || [];
